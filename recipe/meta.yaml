@@ -1,5 +1,5 @@
 {% set name = "ipywidgets-jsonschema" %}
-{% set version = "0.9.0" %}
+{% set version = "0.10.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ipywidgets_jsonschema-{{ version }}.tar.gz
-  sha256: f40336ab1c96518097728d0eb57621b2f78e4250301aec702ae7a714c8d3e508
+  sha256: f7ba70d161299f95c7506b89cd6e6f9552f26cec93bf3edef511d5cde958cdd8
 
 build:
   noarch: python
