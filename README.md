@@ -1,11 +1,11 @@
-About ipywidgets-jsonschema
-===========================
+About ipywidgets-jsonschema-feedstock
+=====================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ipywidgets-jsonschema-feedstock/blob/main/LICENSE.txt)
 
 Home: https://pypi.org/project/ipywidgets-jsonschema/
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ipywidgets-jsonschema-feedstock/blob/main/LICENSE.txt)
 
 Summary: Widget Generator for JSON schema
 
