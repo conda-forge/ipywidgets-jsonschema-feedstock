@@ -6,24 +6,24 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ipywidgets_jsonschema-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ipywidgets_jsonschema-{{ version }}.tar.gz
   sha256: 34caa13b1ff0161772d74dff4e2a2919fdf62699ca05a99090549754117b0a6f
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python {{ python_min }}
   run:
     - ipython
     - ipywidgets
     - jsonschema <5.0a0
     - packaging
-    - python >=3.7
+    - python >={{ python_min }}
     - traitlets
 
 test:
@@ -33,6 +33,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://pypi.org/project/ipywidgets-jsonschema/
